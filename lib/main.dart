@@ -22,7 +22,7 @@ class _XylophoneState extends State<Xylophone> {
     return Expanded(
       child: MaterialButton(
         minWidth: double.maxFinite,
-        color: Colors.yellowAccent,
+        color: Colors.pinkAccent,
         onPressed: () {
           playSound(soundNumber);
         },
