@@ -18,11 +18,11 @@ class _XylophoneState extends State<Xylophone> {
     player.play('assets_note$soundNumber.wav');
   }
 
-  Expanded setKey({required int soundNumber}) {
+  Expanded setKey({required int soundNumber, required Color color}) {
     return Expanded(
       child: MaterialButton(
         minWidth: double.maxFinite,
-        color: Colors.pinkAccent,
+        color: color,
         onPressed: () {
           playSound(soundNumber);
         },
@@ -37,13 +37,13 @@ class _XylophoneState extends State<Xylophone> {
         child: Scaffold(
           body: Column(
             children: [
-              setKey(soundNumber: 1),
-              setKey(soundNumber: 2),
-              setKey(soundNumber: 3),
-              setKey(soundNumber: 4),
-              setKey(soundNumber: 5),
-              setKey(soundNumber: 6),
-              setKey(soundNumber: 7),
+              setKey(soundNumber: 1, color: Colors.pinkAccent),
+              setKey(soundNumber: 2, color: Colors.yellowAccent),
+              setKey(soundNumber: 3, color: Colors.greenAccent),
+              setKey(soundNumber: 4, color: Colors.blueAccent),
+              setKey(soundNumber: 5, color: Colors.grey),
+              setKey(soundNumber: 6, color: Colors.pinkAccent),
+              setKey(soundNumber: 7, color: Colors.tealAccent),
             ],
           ),
         ),
